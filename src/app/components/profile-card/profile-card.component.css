@@ -1,0 +1,106 @@
+.description-button{
+    min-width: 50px;
+    height: 50px;
+    background-color: #5227fd;
+    border-radius: 100%;
+    transform: translate(0,-50%);
+    border-width: 3px 3px 3px 3px;
+    border-color: white;
+    border-style: solid;
+    box-shadow: black -5px 5px 10px -5px;
+}
+.description-container{
+    background-color: white;
+    margin-right: 50px !important;
+    box-shadow: black 0px 1px 5px -3px;
+    overflow: hidden;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.description-content{
+    height: 100%;
+    width: 100%;
+}
+.circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: #d3d3d3;
+    margin-left: 40px !important;
+    margin-right: 20px !important;
+}
+.progres-bar{
+    width: 200px;
+    background-color: #d3d3d3;
+    height: 20px;
+    overflow: hidden;
+}
+
+.progres{
+    height: 100%;
+    background-color: #5227fd;
+    transform: translateX(-100%);
+}
+
+.progresing{
+    animation: progresing 1s forwards;
+}
+
+.birrete{
+    background-image: url('../../../assets/birrete.svg');
+    background-repeat: no-repeat;
+    background-size: auto 70%;
+    background-position: 90%;
+}
+
+.portafolio{
+    background-image: url('../../../assets/portafolio.svg');
+    background-repeat: no-repeat;
+    background-size: auto 70%;
+    background-position: 90%;
+}
+
+.hobbie{
+    width: 50px;
+}
+
+.arrow-up{
+    animation: arrow-up 1s forwards;
+}
+
+.arrow-down{
+    animation: arrow-down 1s forwards;
+}
+.title{
+    margin-left: 40px !important;
+    color: #5227fd;
+}
+@keyframes arrow-up{
+    0%{
+        transform: rotateZ(0deg);
+    }
+
+    100%{
+        transform: rotateZ(180deg);
+    }
+}
+
+@keyframes arrow-down{
+    0%{
+        transform: rotateZ(180deg);
+    }
+
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes progresing{
+    0%{
+        transform: translateX(-100%);
+    }
+    
+    100%{
+        transform: translateX(0%);
+    }
+}

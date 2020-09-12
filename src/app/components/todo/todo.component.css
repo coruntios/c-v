@@ -1,0 +1,90 @@
+.todo_container{
+    width: 99%;
+    height: 60px;
+    min-height: 60px;
+    background-color: black;
+    margin-left:auto !important;
+    margin-right: auto !important;
+    margin-top: 1px !important;
+    overflow: hidden;
+}
+
+.circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+}
+
+
+.container{
+    height: 60px;
+    max-width: 60px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2{
+    background-color: grey;
+}
+
+.verticalLine{
+    height: 100%;
+    background-color: white;
+    max-width: 1px;
+    z-index: 9999;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.horizontalLine{
+    height: 1px;
+    background-color: white;
+    z-index: 9999;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.goUp{
+    animation: goUp 4s infinite;
+}
+.goDown{
+    animation: goDown 4s infinite;
+}
+
+.goRight{
+    animation: goRight 4s infinite;
+}
+.goLeft{
+    animation: goLeft 4s infinite;
+}
+
+@keyframes goLeft {
+    0% {left: 120%;}
+    100% {left: -20%;}
+}
+
+@keyframes goRight {
+   0% {left: -20%;}
+   100% {left: 120%;}
+}
+
+@keyframes goUp{
+    0% {top:120%}
+    100% {top:-20% }
+}
+
+@keyframes goDown{
+    0% {top:-20%}
+    100% {top:120%}
+}

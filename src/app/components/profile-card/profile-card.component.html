@@ -1,0 +1,160 @@
+<div class="col-auto global-margin" style="margin-top: 100px !important;">
+    <div class="row">
+        <h1 style="font-family: Montserrat-ExtraBold;">QUIEN SOY</h1>
+    </div>
+    <div class="row justify-content-center"
+        style="margin-top: 30px !important;font-family: Myriad-Pro-Regular;min-height: 300px;max-height: 300px !important;height: 300px;">
+
+        <div class="col-auto">
+            <img src="../../../assets/profile-picture.jpg" style="width: 250px;border-radius: 50px 0px 0px 5px;" alt="">
+        </div>
+
+        <div class="col description-container">
+            <div style="height: 300px" #container>
+
+                <!-- quien soy? -->
+                <div class="description-content center portafolio">
+                    <div class="col">
+                        <h4 class="title">
+                            Marcelo Antonio Gil
+                        </h4>
+                        <h6 style="margin-left: 40px !important;margin-right: 40px">
+                            Programador Freelancer, las cuales he desenpeñado mi trabajo en <span
+                                style="font-family: Myriad-Pro-Bold;">2 empresas</span> a lo largo de mi
+                            formacion
+                            adopte conocimientos para <span style="font-family: Myriad-Pro-Bold;">Diseño de Base de
+                                Datos</span>, diseño de sistemas y procedimientos de
+                            creacion de
+                            <span style="font-family: Myriad-Pro-Bold;">Software Administrativos</span>, Tengo facilidad
+                            para
+                            resolver problemas y me gusta trabajar en
+                            equipo.
+                            <br>
+                            <span style="font-family: Myriad-Pro-Bold;">Front-End</span>/ <span
+                                style="font-family: Myriad-Pro-Bold;">Back-End</span>
+                        </h6>
+                    </div>
+                </div>
+
+                <!--  -->
+                <div class="description-content center birrete">
+                    <div class="col">
+                        <h4  class="title">
+                            Formación Profesional
+                        </h4>
+                        <!-- 1 -->
+                        <div class="row">
+                            <div class="col-auto center">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="row">
+                                    <h5>2013 Titulo Bachiller ( U.E.P Santa Ana de Jesus.)</h5>
+                                </div>
+                                <div class="row">
+                                    <h6>San Francisco-Venezuela</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="row">
+                            <div class="col-auto center">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="row">
+                                    <h5>2013 Titulo Ingles Avanzado (C.E.V.A.Z.)</h5>
+                                </div>
+                                <div class="row">
+                                    <h6>San Francisco-Venezuela</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="row">
+                            <div class="col-auto center">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="row">
+                                    <h5>2013 Titulo Ing. Informatica ( U.R.B.E.)</h5>
+                                </div>
+                                <div class="row">
+                                    <h6>Maracaibo-Venezuela</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- done -->
+                    </div>
+                </div>
+                <!--  -->
+
+                <div class="description-content center portafolio">
+                    <div class="col">
+                        <div class="row">
+                            <h4  class="title">
+                                Idiomas
+                            </h4>
+                        </div>
+                        <div class="row">
+                            <div class="col" style="margin-left: 40px !important">
+                                <div class="row">
+                                    <div style="display: flex;">
+                                        <div class="row">
+                                            <div class="col-auto" style="align-items: flex-end;display: flex;">
+                                                <h5 style="margin: 0em;margin-right: 10px;">Español</h5>
+                                            </div>
+                                            <div class="col-auto">
+                                                <h6>Lengua Materna</h6>
+                                                <div class="progres-bar">
+                                                    <div [ngClass]="['progres',progresing]" style="width: 100%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-7" style="margin-left: 40px !important">
+                                <div class="row">
+                                    <div style="display: flex;">
+                                        <div class="row">
+                                            <div class="col-auto" style="align-items: flex-end;display: flex;">
+                                                <h5 style="margin: 0em;margin-right: 10px;">Ingles</h5>
+                                            </div>
+                                            <div class="col-auto">
+                                                <h6>B1</h6>
+                                                <div class="progres-bar">
+                                                    <div [ngClass]="['progres',progresing]" style="width: 80%;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4 style="margin-left: 40px !important;margin-top: 40px; color: #5227fd">
+                                Hobbies
+                            </h4>
+                        </div>
+                        <div class="row">
+                            <img src="../../../assets/music.svg" class="hobbie" style="margin-left: 40px;" alt="">
+                            <img src="../../../assets/movie.svg" class="hobbie" style="margin-left: 40px;" alt="">
+                            <img src="../../../assets/pc.svg" class="hobbie" style="margin-left: 40px;" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col"></div>
+        <div class="col" style="display: flex;justify-content: center; align-items: flex-end;">
+            <div class="description-button center" (click)="change()">
+                <img [ngClass]="profile_arrow" style="height: 40%;" src="../../../assets/doble-flecha.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>

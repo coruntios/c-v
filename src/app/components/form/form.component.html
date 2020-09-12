@@ -1,0 +1,27 @@
+<div class="row" style="height: 100vh;">
+    <form #form="ngForm" class="example-full-width global-margin">
+    <h1 style="font-family: Montserrat-ExtraBold;">Contacto</h1>
+        <div class="col">
+            <div class="row form-input">
+                <label>EMAIL</label>
+                <br>
+                <input matInput placeholder="example@mail.com" name="email">
+            </div>
+    
+            <div class="row form-input">
+                <label>ASUNTO</label>
+                <br>
+                <input matInput placeholder="Contact me" name="asunto">
+            </div>
+    
+            <div class="row form-input">
+                <label>MENSAJE</label>
+                <br>
+                <textarea matInput placeholder="Coloca aqui tu mensaje..." rows="10" name="mensaje"></textarea>
+            </div>
+            <div class="row form-input">
+                <button mat-raised-button>ENVIAR</button>
+            </div>
+        </div>
+    </form>
+</div>

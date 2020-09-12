@@ -1,0 +1,18 @@
+.code-img{
+    overflow: hidden;
+    height: 300px;
+    border-radius: 150px 0px 0px 0px;
+    box-shadow: black -5px 5px 20px -5px;
+}
+
+.button{
+    transform: translateY(-50%);
+    padding: 20px !important;
+    background-color: #5227fd;
+    color: white;
+    font-family: Montserrat-Extrabold;
+    border-radius: 5px;
+}
+span{
+    font-family: Montserrat-Extrabold;
+}

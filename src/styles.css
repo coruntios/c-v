@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+html,body{
+    margin: 0px;
+    padding: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8fa;
+}
+div,section{padding: 0% !important;margin: 0% !important;}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('assets/Montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-ExtraBold;
+    src: url('assets/Montserrat/Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: Harabara-Mais-Demo;
+    src: url('assets/Harabara_Mais/Harabara_Mais_Demo.otf');
+}
+
+@font-face {
+    font-family: Myriad-Pro-Regular;
+    src: url('assets/Myriad Pro Regular/Myriad Pro Regular/Myriad Pro Regular.ttf');
+}
+
+@font-face {
+    font-family: Myriad-Pro-Bold;
+    src: url('assets/myriad-pro/MyriadPro-Bold.otf');
+}
+
+.center{
+    justify-content: center;
+    align-items: center; 
+    display: flex;
+}
+
+.global-margin{
+    margin-left: 50px !important;
+}
+
+.show{
+    z-index: 9999;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
