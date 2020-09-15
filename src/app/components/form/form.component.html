@@ -1,26 +1,30 @@
 <div class="row" style="height: 100vh;">
-    <form #form="ngForm" class="example-full-width global-margin">
-    <h1 style="font-family: Montserrat-ExtraBold;">Contacto</h1>
+    <form #form="ngForm" (ngSubmit)="onSubmit(form)" class="example-full-width global-margin">
+        <h1 style="font-family: Montserrat-ExtraBold;">Contacto</h1>
         <div class="col">
+
             <div class="row form-input">
                 <label>EMAIL</label>
                 <br>
-                <input matInput placeholder="example@mail.com" name="email">
+                <input matInput placeholder="example@mail.com" name="to" type="email" ngModel required>
             </div>
-    
+
             <div class="row form-input">
                 <label>ASUNTO</label>
                 <br>
-                <input matInput placeholder="Contact me" name="asunto">
+                <input matInput placeholder="Contact me" name="subject" ngModel required>
             </div>
-    
+
             <div class="row form-input">
                 <label>MENSAJE</label>
                 <br>
-                <textarea matInput placeholder="Coloca aqui tu mensaje..." rows="10" name="mensaje"></textarea>
+                <textarea matInput placeholder="Add here your message..." rows="10" name="text" ngModel required></textarea>
             </div>
             <div class="row form-input">
-                <button mat-raised-button>ENVIAR</button>
+                <button mat-raised-button [disabled]="!form.valid">ENVIAR</button>
+            </div>
+            <div class="row">
+                <h4>{{message}}</h4>
             </div>
         </div>
     </form>
