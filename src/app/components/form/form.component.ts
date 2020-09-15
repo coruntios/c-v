@@ -25,7 +25,7 @@ export class FormComponent implements OnInit {
       this.apiService.post(form.value).subscribe(res => {
         this.sent = true;
         this.message = 'Send Succesfully, please await for the answer'
-        // form.resetForm();
+        form.resetForm();
       }, (err: HttpErrorResponse) => {
         console.log(err.status);
         switch (err.status) {
