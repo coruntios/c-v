@@ -14,16 +14,18 @@ import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
+import { TooltipComponent } from './tooltip/tooltip.component';
+import { IconTooltipComponent } from './icon-tooltip/icon-tooltip.component';
 
 
 
 
 
 @NgModule({
-  declarations: [TodoComponent, TodoListComponent, CubeComponent, SliderComponent, LevelCirclesComponent, ProfileCardComponent, ServicesComponent, PortafolioComponent, PortafolioExample1Component, FormComponent],
-  exports: [TodoComponent, TodoListComponent, CubeComponent, SliderComponent, LevelCirclesComponent, ProfileCardComponent, ServicesComponent, PortafolioComponent, PortafolioExample1Component, FormComponent],
+  declarations: [TodoComponent, TodoListComponent, CubeComponent, SliderComponent, LevelCirclesComponent, ProfileCardComponent, ServicesComponent, PortafolioComponent, PortafolioExample1Component, FormComponent, TooltipComponent, IconTooltipComponent],
+  exports: [TodoComponent, TodoListComponent, CubeComponent, SliderComponent, LevelCirclesComponent, ProfileCardComponent, ServicesComponent, PortafolioComponent, PortafolioExample1Component, FormComponent, TooltipComponent, IconTooltipComponent],
   imports: [
-    CommonModule, FormsModule, MatInputModule, MatFormFieldModule,MatButtonModule
+    CommonModule, FormsModule, MatInputModule, MatFormFieldModule, MatButtonModule
   ]
 })
 export class ComponentsModule { }

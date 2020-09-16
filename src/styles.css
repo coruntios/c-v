@@ -2,8 +2,9 @@ html,body{
     margin: 0px;
     padding: 0%;
     width: 100%;
-    height: 100%;
-    background-color: #f8f8fa;
+    min-height: 100%;
+    background-color: #f8f8fa !important;
+    
 }
 div,section{padding: 0% !important;margin: 0% !important;}
 
