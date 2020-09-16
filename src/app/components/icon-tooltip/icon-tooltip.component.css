@@ -1,8 +1,9 @@
 .icon{
     width: 100px;
     height: 100px;
-    background-color: red;
     border-radius: 100%;
     transform: translateY(-30%);
     margin-right: 20px !important;
+    background-size: 100%;
+    border: 0px;
 }
