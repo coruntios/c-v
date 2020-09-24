@@ -17,6 +17,10 @@ body,html,div { font-family: sans-serif;margin: 0em; padding: 0em;}
   display: none;
 }
 
+.cube {
+  
+}
+
 h3{
   font-size: 18px;
 }
@@ -24,6 +28,7 @@ h3{
 .titles{
   /* z-index: 9999; */
   position: absolute;
+  height: 100%;
   /* overflow: hidden; */
 }
 

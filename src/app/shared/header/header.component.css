@@ -1,56 +1,28 @@
-@media(min-width: 768px){
-    a{
-        color: white;
-        text-decoration: none;
-    }
-    .link:hover{
-        animation: link-jump .25s linear;
-        animation-fill-mode: forwards; 
-    }
-    
-    .header{
-        width: 100%;
-        position: absolute;
-        justify-content: center;
-        align-items: center; 
-        display: flex;
-        color: white;
-        height: 17vh;
-        z-index: 9999;
-    }
-    
-    .header-text-container{
-        color: white;  
-        justify-content: center;
-        align-items: center; 
-        display: flex;
-        height: 85vh;
-    }
+a{
+    color: white;
+    text-decoration: none;
+}
+.link:hover{
+    animation: link-jump .25s linear;
+    animation-fill-mode: forwards; 
 }
 
-@media(max-width: 768px){
-    a{
-        color: white;
-        text-decoration: none;
-    }
-    .link:hover{
-        animation: link-jump .25s linear;
-        animation-fill-mode: forwards; 
-    }
-    
-    .header{
-        width: 100%;
-        justify-content: center;
-        align-items: center; 
-        display: flex;
-        color: white;
-        z-index: 9999;
-    }
-    
-    .header-text-container{
-        color: white;  
-        justify-content: center;
-        align-items: center; 
-        display: flex;
-    }
+.header{
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center; 
+    display: flex;
+    color: white;
+    height: 17vh;
+    z-index: 9999;
+}
+
+.header-text-container{
+    color: white;  
+    justify-content: center;
+    align-items: center; 
+    display: flex;
+    height: 85vh;
+    /* position: absolute; */
 }

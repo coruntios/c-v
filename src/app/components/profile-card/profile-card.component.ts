@@ -41,13 +41,13 @@ export class ProfileCardComponent implements OnInit {
     }
 
     if (this.direction_change) {
-      this.addAnimationTocontainer(-1)
+      this.addAnimationToContainer(-1)
     } else {
-      this.addAnimationTocontainer(1)
+      this.addAnimationToContainer(1)
     }
   }
 
-  addAnimationTocontainer(direction) {
+  addAnimationToContainer(direction) {
     this.container.nativeElement.animate([
       { transform: "translateY(" + this.current_item + "00%)" },
       { transform: "translateY(" + (this.current_item + direction) + "00%)" }
