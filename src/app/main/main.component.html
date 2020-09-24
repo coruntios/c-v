@@ -1,51 +1,57 @@
 <section id="home" class="cointainer">
-    <img src="../../assets/bg.jpg" class="bg" alt="bg">
-    <app-header></app-header>
-    <div class="row  justify-content-between">
-        <div class="col-auto global-margin" style="overflow: hidden;">
-            <div class="header-text-container animated-space center">
-                <div>
-                    <div class="row line"></div>
-                    <div class="row">
-                        <h2 style="font-family: Montserrat;">PROGRAMADOR</h2>
-                    </div>
-                    <div class="row">
-                        <h1 style="font-family: Montserrat-ExtraBold;font-size: 3em;">WEB FULL STACK</h1>
-                    </div>
-                    <div class="row" style="font-family: Montserrat;">
-                        4 Años de experiencia Programando Software Administrativo
+    <div class="col">
+        <img src="../../assets/bg.jpg" class="bg" alt="bg">
+        <app-header></app-header>
+        <div class="row  justify-content-between">
+            <div class="col-auto container" style="overflow: hidden;">
+                <div class="header-text-container animated-space center">
+                    <div>
+                        <div class="row line"></div>
+                        <div class="row">
+                            <div class="col">
+                                <h2 style="font-family: Montserrat;">PROGRAMADOR</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h1 style="font-family: Montserrat-ExtraBold;font-size: 3em;">WEB FULL STACK</h1>
+                            </div>
+                        </div>
+                        <div class="row" style="font-family: Montserrat;">
+                            4 Años de experiencia Programando Software Administrativo
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row justify-content-between"
-                style="font-family: Montserrat-ExtraBold;margin-top: 30px !important;">
-                <div class="col-auto">
-                    <h4>Responsable</h4>
-                </div>
-                <div class="col-auto">
-                    <h4>Constante</h4>
+                <div class="row justify-content-between"
+                    style="font-family: Montserrat-ExtraBold;margin-top: 30px !important;">
+                    <div class="col-auto">
+                        <h4>Responsable</h4>
+                    </div>
+                    <div class="col-auto">
+                        <h4>Constante</h4>
 
-                </div>
-                <div class="col-auto">
-                    <h4>Eficaz</h4>
+                    </div>
+                    <div class="col-auto">
+                        <h4>Eficaz</h4>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-auto" style="overflow: hidden;">
-            <img src="../../assets/photo.jpg" class="photo" alt="">
+            <div class="col-auto" style="overflow: hidden;">
+                <img src="../../assets/photo.jpg" class="photo" alt="">
+            </div>
         </div>
     </div>
 </section>
 <br>
-<section>
-    <div class="col-auto" style="margin-left: 50px !important;">
+<section class="container">
+    <div class="col container">
         <div class="row">
-            <div class="col-auto">
+            <div class="col">
                 <h5 style="font-family: Myriad-Pro-Regular;">Lenguajes De</h5>
             </div>
         </div>
         <div class="row">
-            <div class="col-auto">
+            <div class="col">
                 <h1 style="font-family: Montserrat-ExtraBold;">Programación</h1>
             </div>
         </div>
@@ -53,30 +59,30 @@
     </div>
 </section>
 <br>
-<section id="quien_soy">
+<section class="container" id="quien_soy">
     <app-profile-card></app-profile-card>
 </section>
 <br>
-<section id="services">
+<section class="container" id="services">
     <app-services></app-services>
 </section>
 <br>
-<section id="portafolio">
+<section class="container" id="portafolio">
     <app-portafolio></app-portafolio>
 </section>
-<section>
+<section class="container">
     <app-portafolio-example1 [title]="title1"></app-portafolio-example1>
     <app-cube></app-cube>
 </section>
-<section>
-    <div style="width: 100%;height: 100vh;">
-    <app-portafolio-example1 [title]="title2"></app-portafolio-example1>
+<section class="container">
+    <div class="col">
+        <app-portafolio-example1 [title]="title2"></app-portafolio-example1>
         <img src="../../assets/portafolio.png" style="width: 100%;" alt="">
     </div>
 </section>
-<section id="contact">
+<section class="container" id="contact">
     <app-form></app-form>
 </section>
-<section id="footer">
+<section class="container" id="footer">
     <app-footer></app-footer>
 </section>
