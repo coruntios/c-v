@@ -1,11 +1,11 @@
 .programing-language{
-    width: 200px;
+    width: 100%;
     height: 225px;
     border-radius: 20px;
 }
 
 .selected-programing-language{
-    min-width: 200px;
+    width: 20%;
     background-color: white;
     box-shadow: black 0px 1px 5px -3px;
     position: absolute;

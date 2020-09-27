@@ -30,7 +30,7 @@
     margin-right: 20px !important;
 }
 .progres-bar{
-    width: 200px;
+    width: 100%;
     background-color: #d3d3d3;
     height: 20px;
     overflow: hidden;

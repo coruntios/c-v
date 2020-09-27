@@ -39,13 +39,25 @@ div,section{padding: 0% !important;margin: 0% !important;}
     display: flex;
 }
 
-.global-margin{
-    margin-left: 50px !important;
-}
-
 .show{
     z-index: 9999;
 }
+
+.grid{
+    display: grid;
+}
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@media(max-width: 768px){
+    .global-margin{
+        margin: auto !important;
+    }
+    
+}
 
+@media(min-width: 768px){
+    .global-margin{
+        margin-left: 50px !important;
+    }
+}
