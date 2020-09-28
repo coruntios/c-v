@@ -11,6 +11,7 @@
     border-radius: 5px;
     background-color: grey;
     padding: 10px !important;
+    max-width: 500px;
 }
 
 .round-point{

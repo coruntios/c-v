@@ -30,8 +30,8 @@
     margin-right: 20px !important;
 }
 .progres-bar{
-    width: 100%;
-    background-color: #d3d3d3;
+    width: 100px;
+    background-color: grey;
     height: 20px;
     overflow: hidden;
 }
@@ -54,7 +54,7 @@
 }
 
 .portafolio{
-    background-image: url('../../../assets/portafolio.svg');
+    /* background-image: url('../../../assets/portafolio.svg'); */
     background-repeat: no-repeat;
     background-size: auto 70%;
     background-position: 90%;
@@ -102,5 +102,16 @@
     
     100%{
         transform: translateX(0%);
+    }
+}
+
+@media(max-width:768px){
+    .description-container{
+        background-color: white;
+        margin-right: 50px !important;
+        box-shadow: black 0px 1px 5px -3px;
+        overflow: hidden;
+        border-radius: 0px 15px 15px 0px;
+        min-width: 100% !important;
     }
 }

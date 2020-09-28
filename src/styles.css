@@ -51,7 +51,7 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 @media(max-width: 768px){
     .global-margin{
-        margin: auto !important;
+        padding-left: 50px !important;
     }
     
 }
