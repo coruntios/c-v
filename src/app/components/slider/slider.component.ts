@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef, forwardRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, forwardRef, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-slider',
@@ -6,7 +6,8 @@ import { Component, OnInit, ViewChild, ElementRef, forwardRef } from '@angular/c
   styleUrls: ['./slider.component.css']
 })
 export class SliderComponent implements OnInit {
-  layer = 0
+  layer = 0;
+  step = 0;
   languages = [
     {
       level: 5,
@@ -85,19 +86,29 @@ export class SliderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.onResize();
+  }
 
+  // @HostListener('window:resize',['$event'])
+  onResize(){
+    console.log();
+    if(window.innerWidth>768){
+      this.step = 2;
+    }else{
+      this.step = 10
+    }
   }
 
   right() {
-    if (this.layer > -(this.languages.length-1)*2) {
+    if (this.layer > -(this.languages.length-1)*this.step) {
       this.slider_content.nativeElement.animate([
         { transform: "translateX(" + this.layer + "0%)" },
-        { transform: "translateX(" + (this.layer - 2) + "0%)" }
+        { transform: "translateX(" + (this.layer - this.step) + "0%)" }
       ], {
         duration: 500,
         fill: 'forwards'
       })
-      this.layer = this.layer - 2;
+      this.layer = this.layer - this.step;
     }
   }
 
@@ -105,12 +116,12 @@ export class SliderComponent implements OnInit {
     if (this.layer !=0) {
       this.slider_content.nativeElement.animate([
         { transform: "translateX(" + this.layer + "0%)" },
-        { transform: "translateX(" + (this.layer + 2) + "0%)" }
+        { transform: "translateX(" + (this.layer + this.step) + "0%)" }
       ], {
         duration: 500,
         fill: 'forwards'
       })
-      this.layer = this.layer + 2;
+      this.layer = this.layer + this.step;
     }
   }
 }

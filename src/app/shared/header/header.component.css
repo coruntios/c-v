@@ -7,6 +7,10 @@ a{
     animation-fill-mode: forwards; 
 }
 
+.link{
+    z-index: 9999;
+}
+
 .header{
     width: 100%;
     /* position: absolute; */

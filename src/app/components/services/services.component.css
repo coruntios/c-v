@@ -1,12 +1,6 @@
-.code-img{
-    overflow: hidden;
-    height: 300px;
-    border-radius: 150px 0px 0px 0px;
-    box-shadow: black -5px 5px 20px -5px;
-}
 
 .button{
-    transform: translateY(-50%);
+    transform: translateY(-30%);
     padding: 20px !important;
     background-color: #5227fd;
     color: white;
@@ -15,4 +9,19 @@
 }
 span{
     font-family: Montserrat-Extrabold;
+}
+
+@media(min-width: 768px){
+    .code-img{
+        overflow: hidden;
+        height: 300px;
+        border-radius: 150px 0px 0px 0px;
+        box-shadow: black -5px 5px 20px -5px;
+    }
+}
+
+@media(max-width: 768px){
+    .code-img{
+        display: none;
+    }
 }

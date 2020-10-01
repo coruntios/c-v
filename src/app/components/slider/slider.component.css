@@ -4,21 +4,12 @@
     border-radius: 20px;
 }
 
-.selected-programing-language{
-    width: 20%;
-    background-color: white;
-    box-shadow: black 0px 1px 5px -3px;
-    position: absolute;
-}
 
 .item:hover{
     animation: wiggle 3s forwards;
 }
 
-.item{
-    min-width: 20%;
-    z-index: 3;
-}
+
 
 .arrow-container{
     justify-content: center;
@@ -36,16 +27,7 @@
     display: flex;
     cursor: pointer;
 }
-.left-arrow{
-    margin-right: 15px !important;
-    animation: moving-arrow-left 1s infinite;
 
-}
-.right-arrow{
-    margin-left: 15px !important;
-    margin-right: 50px !important;
-    animation: moving-arrow-right 1s infinite;
-}
 
 .programing-language-icon{
     width: 50px;
@@ -105,6 +87,57 @@
     }
 }
 
+@media(min-width:768px){
+    .item{
+        min-width: 20%;
+        z-index: 3;
+    }
+
+    .selected-programing-language{
+        width: 20%;
+        background-color: white;
+        box-shadow: black 0px 1px 5px -3px;
+        position: absolute;
+    }
+
+    .left-arrow{
+        margin-right: 15px !important;
+        animation: moving-arrow-left 1s infinite;
+    
+    }
+
+    .right-arrow{
+        margin-left: 15px !important;
+        margin-right: 50px !important;
+        animation: moving-arrow-right 1s infinite;
+    }
+}
+
+@media(max-width:768px){
+    .item{
+        min-width: 100%;
+        z-index: 3;
+    }
+
+    .selected-programing-language{
+        width: 100%;
+        background-color: white;
+        box-shadow: black 0px 1px 5px -3px;
+        position: absolute;
+    }
+
+    .left-arrow{
+        margin-right: 15px !important;
+        animation: moving-arrow-left 1s infinite;
+    
+    }
+
+    .right-arrow{
+        margin-left: 15px !important;
+        margin-right: 50px !important;
+        animation: moving-arrow-right 1s infinite;
+    }
+}
 /* @keyframes test{
     0%{
         transform: translateX(0%);
