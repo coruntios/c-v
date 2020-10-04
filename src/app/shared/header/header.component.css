@@ -9,6 +9,7 @@ a{
 
 .link{
     z-index: 9999;
+    margin-right: 30px !important;
 }
 
 .header{

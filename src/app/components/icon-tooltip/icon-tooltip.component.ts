@@ -8,6 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 export class IconTooltipComponent implements OnInit {
   @Input() title = "";
   @Input() image = "";
+  @Input() url = "";
+
 
   visible = false;
   constructor() { }

@@ -1,9 +1,22 @@
-.icon{
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    transform: translateY(-30%);
-    margin-right: 20px !important;
-    background-size: 100%;
-    border: 0px;
+@media(min-width: 768px){
+    .icon{
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        transform: translateY(-30%);
+        margin-right: 20px !important;
+        background-size: 100%;
+        border: 0px;
+    }   
+}
+
+@media(max-width: 768px){
+    .icon{
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        margin: 5px !important;
+        background-size: 100%;
+        border: 0px;
+    }   
 }
